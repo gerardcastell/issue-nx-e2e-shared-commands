@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@prueba/cypress-commands": ["libs/src/index.ts"]
+      "@prueba/cypress-commands": ["libs/cypress-commands/src/index.ts"],
+      "@prueba/utils": ["libs/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

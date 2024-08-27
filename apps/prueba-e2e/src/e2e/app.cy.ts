@@ -1,3 +1,4 @@
+import { capitalize } from '@prueba/utils';
 import { getGreeting } from '../support/app.po';
 
 describe('prueba-e2e', () => {
@@ -8,7 +9,7 @@ describe('prueba-e2e', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains(/Welcome/);
+    getGreeting().contains(capitalize('welcome'));
     cy.getEl('welcome').should('exist');
   });
 });
