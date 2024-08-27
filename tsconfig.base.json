@@ -16,6 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@prueba/cypress-commands": ["libs/cypress-commands/src/index.ts"],
+      "@prueba/cypress-utils-rollup": [
+        "libs/cypress-utils-rollup/src/index.ts"
+      ],
+      "@prueba/cypress-utils-tsc": ["libs/cypress-utils-tsc/src/index.ts"],
+      "@prueba/cypress-utils-vite": ["libs/cypress-utils-vite/src/index.ts"],
       "@prueba/utils": ["libs/utils/src/index.ts"]
     }
   },

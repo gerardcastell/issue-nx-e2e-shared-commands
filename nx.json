@@ -48,6 +48,12 @@
       "options": {
         "targetName": "test"
       }
+    },
+    {
+      "plugin": "@nx/rollup/plugin",
+      "options": {
+        "buildTargetName": "build"
+      }
     }
   ],
   "generators": {
@@ -67,5 +73,17 @@
       }
     }
   },
-  "nxCloudAccessToken": "MTdlOWRjNjktM2I4OS00Njg2LTlhMTItOWQyNmRmOTBmOWNmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MTdlOWRjNjktM2I4OS00Njg2LTlhMTItOWQyNmRmOTBmOWNmfHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "@nx/vite:build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }

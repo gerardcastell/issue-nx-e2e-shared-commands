@@ -1,0 +1,19 @@
+{
+  "name": "cypress-utils-vite",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cypress-utils-vite/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/cypress-utils-vite",
+        "main": "libs/cypress-utils-vite/src/index.ts",
+        "tsConfig": "libs/cypress-utils-vite/tsconfig.lib.json",
+        "assets": ["libs/cypress-utils-vite/*.md"]
+      }
+    }
+  }
+}

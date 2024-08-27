@@ -1,0 +1,19 @@
+{
+  "name": "cypress-utils-tsc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cypress-utils-tsc/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/cypress-utils-tsc",
+        "main": "libs/cypress-utils-tsc/src/index.ts",
+        "tsConfig": "libs/cypress-utils-tsc/tsconfig.lib.json",
+        "assets": ["libs/cypress-utils-tsc/*.md"]
+      }
+    }
+  }
+}

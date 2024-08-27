@@ -1,5 +1,4 @@
-import { capitalize } from '@prueba/utils';
-import { getGreeting } from '../support/app.po';
+import { capitalize, getGreeting } from '../support/app.po';
 
 describe('prueba-e2e', () => {
   beforeEach(() => cy.visit('/'));
