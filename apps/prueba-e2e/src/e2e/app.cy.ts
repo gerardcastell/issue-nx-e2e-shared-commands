@@ -9,5 +9,6 @@ describe('prueba-e2e', () => {
 
     // Function helper example, see `../support/app.po.ts` file
     getGreeting().contains(/Welcome/);
+    cy.getEl('welcome').should('exist');
   });
 });

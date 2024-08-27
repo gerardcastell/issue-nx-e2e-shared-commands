@@ -14,4 +14,5 @@
 // ***********************************************************
 
 // Import commands.ts using ES2015 syntax:
+import '@prueba/cypress-commands';
 import './commands';

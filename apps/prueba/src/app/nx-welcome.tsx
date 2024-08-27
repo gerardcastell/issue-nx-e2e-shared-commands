@@ -425,7 +425,7 @@ export function NxWelcome({ title }: { title: string }) {
       />
       <div className="wrapper">
         <div className="container">
-          <div id="welcome">
+          <div id="welcome" data-testid="welcome">
             <h1>
               <span> Hello there, </span>
               Welcome {title} 👋
